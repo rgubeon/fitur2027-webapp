@@ -1,0 +1,17 @@
+/* ============================================================
+   Andalusian Cromarium — Webfonts
+   ------------------------------------------------------------
+   Display serif  : Cormorant Garamond  (SUBSTITUTE — see note)
+   Text sans      : Hanken Grotesk       (SUBSTITUTE — see note)
+
+   NOTE ON SUBSTITUTION
+   The Cromarium wordmark + editorial headings use a bespoke
+   high-contrast display serif with ligature swashes (Ogg /
+   Canela family feel). No font binary was supplied, so the
+   nearest freely-available match — Cormorant Garamond — is
+   loaded here. UI/body copy uses a warm humanist grotesque;
+   Hanken Grotesk is the nearest free match. Swap these @import
+   lines for the licensed foundry fonts when available.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Hanken+Grotesk:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
