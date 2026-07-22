@@ -1,0 +1,110 @@
+/* ============================================================
+   Andalusian Cromarium — Color System
+   ------------------------------------------------------------
+   The brand runs on ONE deep navy ink, a near-white iridescent
+   canvas, and an 8-stop chromatic spectrum — "8 provincias,
+   8 colores". Color is the product: provinces, activations and
+   progress are all expressed through the spectrum.
+   ============================================================ */
+
+:root {
+  /* ---- Ink / Navy (primary brand color) ------------------ */
+  --navy-900: #0E1A4D;   /* wordmark, headlines, primary ink   */
+  --navy-800: #17235C;
+  --navy-700: #26326E;
+  --navy-600: #3B4785;
+  --navy-500: #5A64A0;   /* muted labels                       */
+  --navy-400: #8189B4;   /* secondary text on light            */
+  --navy-300: #AAB0CF;   /* tertiary / placeholder             */
+  --navy-200: #D2D6E6;   /* hairline borders                   */
+
+  /* ---- Neutral canvas (cool, faintly lilac) -------------- */
+  --white:        #FFFFFF;
+  --paper:        #F7F8FC;   /* app background base            */
+  --paper-lilac:  #F0F0FA;   /* faint iridescent wash          */
+  --mist:         #EAEBF5;   /* inset surfaces / track         */
+  --line:         #E3E5F0;   /* dividers                       */
+
+  /* ---- The Cromarium Spectrum (8 chromatic stops) -------- */
+  /* Ordered cool → warm, matching the province wheel.        */
+  --chroma-cyan:     #2FD4CF;   /* Mar de luz · Cádiz          */
+  --chroma-indigo:   #5457D8;   /* Sur profundo · Índigo       */
+  --chroma-violet:   #8A5CF6;   /* Patrimonio · Granada        */
+  --chroma-fuchsia:  #E75CC6;   /* Atardecer · Fucsia          */
+  --chroma-rose:     #D6455F;   /* Tierra roja                 */
+  --chroma-red:      #E5473B;   /* Califal · Córdoba           */
+  --chroma-orange:   #F08A3C;   /* Luz & desierto · Almería    */
+  --chroma-gold:     #D9BC7E;   /* Oro andaluz                 */
+
+  /* Soft tints (chips, dot backers, wash fills) ------------ */
+  --chroma-cyan-100:    #DBF7F5;
+  --chroma-indigo-100:  #E2E3FA;
+  --chroma-violet-100:  #ECE3FE;
+  --chroma-fuchsia-100: #FBE1F5;
+  --chroma-rose-100:    #FADEE4;
+  --chroma-orange-100:  #FCEBDB;
+  --chroma-gold-100:    #F6EFDD;
+
+  /* ---- Semantic status ----------------------------------- */
+  --status-success: #16A981;   /* "Sincronizada", "Hecha"     */
+  --status-success-100: #DBF3EA;
+  --status-warning: #E8912B;   /* "Pendiente"                 */
+  --status-warning-100: #FBEBD6;
+  --status-live:    #E5473B;   /* "En directo ahora"          */
+  --status-info:    #5457D8;   /* neutral notice              */
+  --status-reserved:#8A5CF6;   /* "Reservado"                 */
+
+  /* ---- Semantic aliases (use these in product) ----------- */
+  --ink:            var(--navy-900);
+  --text-strong:    var(--navy-900);
+  --text-body:      var(--navy-700);
+  --text-muted:     var(--navy-400);
+  --text-label:     var(--navy-500);
+  --text-invert:    var(--white);
+
+  --surface-app:    var(--paper);
+  --surface-card:   rgba(255, 255, 255, 0.62);   /* glass       */
+  --surface-solid:  var(--white);
+  --surface-inset:  var(--mist);
+  --border-hair:    rgba(255, 255, 255, 0.70);   /* glass edge  */
+  --border-line:    var(--line);
+
+  --accent:         var(--chroma-indigo);
+  --accent-press:   #3E41BE;
+
+  /* ---- Signature prism gradient -------------------------- */
+  /* The primary emphasis sweep: pink → coral → orange.        */
+  /* Reserved for one CTA / emphasis element per screen.      */
+  --gradient-prism: linear-gradient(
+      100deg,
+      #C63AA0 0%, #E85EA0 34%, #F58AA0 60%, #F5A85C 100%);   /* @kind color */
+  --gradient-prism-soft: linear-gradient(
+      120deg,
+      #F8DCF0 0%, #FBD5E0 42%, #FCDCCF 72%, #FDE6CC 100%);   /* @kind color */
+  /* Faint iridescent canvas wash (screen backgrounds).       */
+  --gradient-canvas: radial-gradient(
+      120% 90% at 82% 8%,
+      rgba(138,92,246,0.10) 0%, rgba(47,212,207,0.08) 34%,
+      rgba(231,92,198,0.06) 60%, rgba(255,255,255,0) 80%);   /* @kind color */
+
+  /* ---- Prism washes by color family ---------------------- */
+  /* Soft, airy single-family iridescent gradients — one per  */
+  /* Cromarium hue. Use as tinted section/hero backgrounds,   */
+  /* card washes and province surfaces. Light by design; keep */
+  /* navy ink on top for contrast.                            */
+  --gradient-wash-blue: linear-gradient(
+      120deg,
+      #E8F2FE 0%, #C7E0FA 46%, #9EC9F3 78%, #82B7EE 100%);   /* @kind color */
+  --gradient-wash-pink: linear-gradient(
+      120deg,
+      #FBEAF8 0%, #EFC9EE 42%, #E2B7E8 72%, #CBCEF6 100%);   /* @kind color */
+  --gradient-wash-green: linear-gradient(
+      120deg,
+      #E7F9EE 0%, #C2ECD4 44%, #A6E1C6 74%, #99DDD6 100%);   /* @kind color */
+  --gradient-wash-orange: linear-gradient(
+      120deg,
+      #FEEDDB 0%, #FBD2AF 44%, #F8B98A 74%, #F5A96E 100%);   /* @kind color */
+  --gradient-wash-yellow: linear-gradient(
+      120deg,
+      #FEF7D6 0%, #FAEAA8 44%, #F4DE86 74%, #F0D66A 100%);   /* @kind color */
+}
